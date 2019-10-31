@@ -1,0 +1,368 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: arial;
+     color: gray;
+     letter-spacing: 1px;
+ }
+
+
+ .header {
+     display: flex;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(1, 1fr);
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 50px;
+     background: #000;
+     color: black;
+     align-items: center;
+     justify-content: center;
+     z-index: 1;
+ }
+
+ p.p1 {
+     width: 50%;
+     line-height: 50px;
+     /* text-align: center; */
+     justify-content: left;
+     color: white;
+ }
+
+ p.p2 {
+     width: 20%;
+     line-height: 50px;
+     color: white;
+ }
+
+ p.p3 {
+     width: 30%;
+ }
+
+ a.email {
+     display: flex;
+     /* width: 30%; */
+     line-height: 50px;
+     text-decoration: none;
+     color: white;
+     text-transform: uppercase;
+     text-align: right;
+ }
+
+ a.email:hover {
+     color: royalblue;
+ }
+
+ .linkmenu {
+     box-sizing: border-box;
+     width: 15%;
+     height: 120px;
+     line-height: 120px;
+     text-decoration: none;
+     text-transform: uppercase;
+     text-align: center;
+     font-size: 26px;
+     color: grey;
+     transition: 0.5s;
+ }
+
+ .linkmenu:hover {
+     color: royalblue;
+     text-shadow: 5px 0px 15px royalblue;
+     letter-spacing: 2px;
+     border-bottom: 2px solid royalblue;
+ }
+
+
+ .cermenu {
+     display: flex;
+     position: fixed;
+     left: 0;
+     top: 50px;
+     background-color: rgba(243, 243, 243, 0.89);
+     width: 100%;
+     align-items: center;
+     padding: 10px;
+     justify-content: center;
+     z-index: 2;
+ }
+
+ .break {
+     width: 100%;
+     height: 200px;
+ }
+
+
+ footer {
+     width: 100%;
+     line-height: 20px;
+     background-color: black;
+     text-align: center;
+     font-size: 14px;
+     text-transform: uppercase;
+     color: white;
+ }
+
+ footer a {
+     text-decoration: none;
+ }
+
+ .offer {
+     display: grid;
+     /* border: 2px solid red; */
+     height: 25%;
+     grid-template-columns: repeat(5, 1fr);
+     grid-template-rows: repeat(2, 250px);
+
+ }
+
+ .offer div {
+     box-sizing: border-box;
+     text-align: center;
+     text-transform: uppercase;
+     background-color: rgb(95, 105, 192);
+ }
+
+ .offer div:nth-child(n) {
+     transition: 0.3s;
+     background-size: cover;
+     cursor: pointer;
+     grid-area: inherit;
+     font-size: 25px;
+     line-height: 60px;
+ }
+
+ .offer div:nth-child(1) {
+     background-image: url(/img/motor-768750_640.jpg);
+ }
+
+ .offer div:nth-child(2) {
+     background-image: url(/img/engine-3483527_640.jpg);
+ }
+
+ .offer div:nth-child(3) {
+     background-image: url(/img/gasket-1319763_640.jpg);
+ }
+
+ .offer div:nth-child(8) {
+     background-image: url(/img/mechanics-424130_640.jpg);
+ }
+
+ .offer div:nth-child(4) {
+     background-image: url(/img/motor-2154575_640.jpg);
+ }
+
+ .offer div:nth-child(5) {
+     background-image: url(/img/screws-600491_640.jpg);
+ }
+
+ .offer div:nth-child(6) {
+     background-image: url(/img/automobile-958184_640.jpg);
+ }
+
+ .offer div:nth-child(7) {
+     background-image: url(/img/assembly-2053415_1280.jpg);
+ }
+
+ .offer div:nth-child(9) {
+     background-image: url(/img/car-town-1410859_640.jpg);
+ }
+
+ .offer div:nth-child(10) {
+     background-image: url(/img/motor-443695_640.jpg);
+     font-size: 20px;
+     line-height: 32px;
+ }
+
+
+ .offer div p:nth-child(even) {
+     color: yellowgreen;
+ }
+
+ .offer div:nth-child(n):hover {
+     filter: opacity(0.8);
+     text-shadow: 10px 0 15px white;
+     color: darkblue;
+ }
+
+ p.title {
+     display: block;
+     top: 50%;
+     width: 100%;
+     height: 60px;
+     background-color: rgba(53, 48, 48, 0.342);
+     color: white;
+ }
+
+ .contact {
+     width: 100%;
+     height: 340px;
+     background-color: transparent;
+     background-image: url(/img/keys-1380134_1280.jpg);
+     background-size: cover;
+ }
+
+ .contact p {
+     position: relative;
+     top: 130px;
+     color: black;
+     line-height: 100px;
+     font-size: 40px;
+     text-align: center;
+     width: 100%;
+     background-color: rgba(255, 255, 255, 0.849);
+ }
+
+ @media (max-width: 414px) {
+
+     p.p1,
+     p.p2,
+     p.p3,
+     a.email {
+         font-size: 6px;
+         color: white;
+         line-height: 10px;
+         text-align: center;
+         display: none;
+     }
+
+     a.linkmenu {
+         display: none;
+     }
+
+     .logo3 {
+         display: none;
+     }
+
+     .logo1 {
+         width: 100%;
+         text-align: center;
+     }
+
+     section.header {
+         color: white;
+     }
+
+     .offer {
+         display: grid;
+         height: 25%;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(5, 150px);
+     }
+
+     .contact p {
+         top: 60px;
+         font-size: 25px;
+         line-height: 40px;
+     }
+
+     .contact {
+         width: 100%;
+         height: 180px;
+     }
+
+     footer {
+         font-size: 8px;
+     }
+
+     p.title {
+         font-size: 15px;
+     }
+
+     .linkmenu {
+         font-size: 14px;
+     }
+
+     .offer div:nth-child(n) {
+         height: 150px;
+     }
+
+
+ }
+
+ @media (orientation: landscape) and (max-width: 812px) {
+
+     p.p1,
+     p.p2,
+     p.p3,
+     a.email {
+         display: none;
+     }
+
+     a.linkmenu {
+         display: none;
+     }
+
+     .logo3 {
+         /* display: none; */
+         text-align: center;
+         width: 50%;
+     }
+
+     .logo1 {
+         width: 50%;
+         text-align: center;
+     }
+
+     section.header {
+         color: white;
+     }
+
+     .offer {
+         display: grid;
+         /* border: 2px solid red; */
+         height: 25%;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(5, 150px);
+     }
+
+     .contact p {
+         top: 60px;
+         font-size: 25px;
+         line-height: 40px;
+     }
+
+     .contact {
+         /* position: absolute; */
+         width: 100%;
+         height: 180px;
+     }
+
+     footer {
+         font-size: 8px;
+     }
+
+     p.title {
+         font-size: 20px;
+     }
+
+     .linkmenu {
+         font-size: 14px;
+     }
+
+     .offer div:nth-child(n) {
+         height: 150px;
+     }
+
+
+ }
+
+ @media (orientation: landscape) and (max-width: 1024px) {
+
+     p.p1 {
+         font-size: 18px;
+         line-height: normal;
+         text-align: center;
+     }
+ }
+
+ @media (orientation: landscape) and (max-width: 1366px) {
+
+     p.p1 {
+         font-size: 18px;
+         line-height: normal;
+         text-align: center;
+     }
+ }
